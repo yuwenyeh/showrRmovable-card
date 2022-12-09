@@ -38,7 +38,7 @@ class CoverFlowLayout: UICollectionViewLayout {
         //獲取這個點collection的屬性
         let attrs = self.layoutAttributesForElements(in: CGRect(x: proposedContentOffset.x, y: proposedContentOffset.y, width: collectionView!.bounds.size.width, height: collectionView!.bounds.size.height))
         
-        //3需要移動最小的距離
+        //3 需要移動最小的距離
         var moveDistance: CGFloat = CGFloat(MAXFLOAT)
         //4找出最小距離
         attrs?.forEach{ (attr) in
