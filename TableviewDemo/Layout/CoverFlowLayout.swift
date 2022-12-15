@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CoverFlowLayout: UICollectionViewLayout {
+class CoverFlowLayout: UICollectionViewFlowLayout {
     
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {

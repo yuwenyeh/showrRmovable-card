@@ -15,6 +15,10 @@
 		D889EEB42902A146002D2C4D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D889EEB22902A146002D2C4D /* HomeViewController.xib */; };
 		D889EEB62902A297002D2C4D /* TableViewAdpter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D889EEB52902A297002D2C4D /* TableViewAdpter.swift */; };
 		D889EEB92902A439002D2C4D /* AdapterSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D889EEB82902A439002D2C4D /* AdapterSectionModel.swift */; };
+		D8C05DBB294B667300DFB290 /* CoverFlowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C05DBA294B667300DFB290 /* CoverFlowCollectionViewCell.swift */; };
+		D8C05DBD294B66A000DFB290 /* BaseXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C05DBC294B66A000DFB290 /* BaseXibView.swift */; };
+		D8C05DC0294B66D900DFB290 /* CoverFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C05DBE294B66D900DFB290 /* CoverFlowViewController.swift */; };
+		D8C05DC1294B66D900DFB290 /* CoverFlowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C05DBF294B66D900DFB290 /* CoverFlowViewController.xib */; };
 		D8C4DA3D294196E6005E8082 /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C4DA3C294196E6005E8082 /* UICollectionView+.swift */; };
 		D8C4DA4129419B30005E8082 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C4DA3F29419B30005E8082 /* HomeCollectionViewCell.swift */; };
 		D8C4DA4229419B30005E8082 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C4DA4029419B30005E8082 /* HomeCollectionViewCell.xib */; };
@@ -33,6 +37,10 @@
 		D889EEB22902A146002D2C4D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		D889EEB52902A297002D2C4D /* TableViewAdpter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAdpter.swift; sourceTree = "<group>"; };
 		D889EEB82902A439002D2C4D /* AdapterSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterSectionModel.swift; sourceTree = "<group>"; };
+		D8C05DBA294B667300DFB290 /* CoverFlowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverFlowCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8C05DBC294B66A000DFB290 /* BaseXibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseXibView.swift; sourceTree = "<group>"; };
+		D8C05DBE294B66D900DFB290 /* CoverFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverFlowViewController.swift; sourceTree = "<group>"; };
+		D8C05DBF294B66D900DFB290 /* CoverFlowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoverFlowViewController.xib; sourceTree = "<group>"; };
 		D8C4DA3C294196E6005E8082 /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
 		D8C4DA3F29419B30005E8082 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		D8C4DA4029419B30005E8082 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -72,6 +80,8 @@
 			children = (
 				D889EEB12902A146002D2C4D /* HomeViewController.swift */,
 				D889EEB22902A146002D2C4D /* HomeViewController.xib */,
+				D8C05DBE294B66D900DFB290 /* CoverFlowViewController.swift */,
+				D8C05DBF294B66D900DFB290 /* CoverFlowViewController.xib */,
 				D889EEB72902A411002D2C4D /* Adapter */,
 				D8C4DA4329419B36005E8082 /* Cell */,
 				D8C4DA3E29419AAA005E8082 /* extension */,
@@ -98,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				D8C4DA3C294196E6005E8082 /* UICollectionView+.swift */,
+				D8C05DBC294B66A000DFB290 /* BaseXibView.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -115,6 +126,7 @@
 			children = (
 				D8C4DA4029419B30005E8082 /* HomeCollectionViewCell.xib */,
 				D8C4DA3F29419B30005E8082 /* HomeCollectionViewCell.swift */,
+				D8C05DBA294B667300DFB290 /* CoverFlowCollectionViewCell.swift */,
 			);
 			path = xib;
 			sourceTree = "<group>";
@@ -190,6 +202,7 @@
 				D8C4DA4229419B30005E8082 /* HomeCollectionViewCell.xib in Resources */,
 				D889EEA72902A0D2002D2C4D /* Assets.xcassets in Resources */,
 				D889EEB42902A146002D2C4D /* HomeViewController.xib in Resources */,
+				D8C05DC1294B66D900DFB290 /* CoverFlowViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,9 +215,12 @@
 			files = (
 				D889EE9E2902A0D0002D2C4D /* AppDelegate.swift in Sources */,
 				D889EEA02902A0D0002D2C4D /* SceneDelegate.swift in Sources */,
+				D8C05DC0294B66D900DFB290 /* CoverFlowViewController.swift in Sources */,
 				D889EEB92902A439002D2C4D /* AdapterSectionModel.swift in Sources */,
 				D889EEB32902A146002D2C4D /* HomeViewController.swift in Sources */,
+				D8C05DBB294B667300DFB290 /* CoverFlowCollectionViewCell.swift in Sources */,
 				D8C4DA3D294196E6005E8082 /* UICollectionView+.swift in Sources */,
+				D8C05DBD294B66A000DFB290 /* BaseXibView.swift in Sources */,
 				D8C4DA4129419B30005E8082 /* HomeCollectionViewCell.swift in Sources */,
 				D8C4DA4529419F33005E8082 /* CollectionViewFlowLayout.swift in Sources */,
 				D8C4DA492941DF2B005E8082 /* CoverFlowLayout.swift in Sources */,
