@@ -25,7 +25,7 @@ class HomeViewController: UIViewController {
         mCollectionView.dataSource = self
         
         //注冊cell
-        mCollectionView.registerCell(HomeCollectionViewCell.self)
+        mCollectionView.registerXibCell(HomeCollectionViewCell.self)
         view.addSubview(mCollectionView)
     }
     

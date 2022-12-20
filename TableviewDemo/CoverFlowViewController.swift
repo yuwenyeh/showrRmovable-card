@@ -18,7 +18,9 @@ class CoverFlowViewController: UIViewController {
         setlayoutView()
         mCoverCollectionView.delegate = self
         mCoverCollectionView.dataSource = self
-        mCoverCollectionView.registerCell(CoverFlowCollectionViewCell.self)
+        mCoverCollectionView.rgister(CoverFlowCollectionViewCell.self)
+        //mCoverCollectionView.registerXibCell(CoverFlowCollectionViewCell.self)
+   
         mCoverCollectionView.collectionViewLayout = collectionLayout
     }
     
@@ -42,7 +44,8 @@ extension CoverFlowViewController: UICollectionViewDelegate, UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: CoverFlowCollectionViewCell = collectionView.dequeueResuableCell(for: indexPath)
+        let cell: CoverFlowCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(CoverFlowCollectionViewCell.self)", for: indexPath) as! CoverFlowCollectionViewCell
+//        let cell: CoverFlowCollectionViewCell = collectionView.dequeueResuableCell(for: indexPath)
         cell.text = "\(number)"
         number += 1
         cell.backgroundColor = indexPath.item % 2 == 0 ? .purple : .red

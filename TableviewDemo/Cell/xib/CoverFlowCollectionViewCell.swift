@@ -9,12 +9,12 @@ import UIKit
 
 class CoverFlowCollectionViewCell: UICollectionViewCell {
     
-    private var coverImage: UIImageView!
+   // private var coverImage: UIImageView!
     private var coverNumber: UILabel!
     
     var imageName: String = "" {
         didSet {
-            coverImage.image = UIImage(named: imageName)
+           // coverImage.image = UIImage(named: imageName)
         }
     }
     var text: String = "" {
@@ -35,7 +35,7 @@ class CoverFlowCollectionViewCell: UICollectionViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        coverImage.frame = self.bounds
+        //coverImage.frame = self.bounds
     }
     
     required init?(coder: NSCoder) {

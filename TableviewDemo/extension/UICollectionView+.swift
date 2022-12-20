@@ -9,9 +9,15 @@ import UIKit
 
 extension UICollectionView {
     
-    func registerCell(_ aCell: UICollectionViewCell.Type) {
+    func registerXibCell(_ aCell: UICollectionViewCell.Type) {
         self.register(UINib(nibName: "\(aCell.self)", bundle: nil), forCellWithReuseIdentifier: "\(aCell.self)")
     }
+    
+    func rgister(_ aCell: UICollectionViewCell.Type){
+        self.register(aCell.self, forCellWithReuseIdentifier: "\(aCell.self)")
+    }
+    
+
     
     func registerCells(_ aCells: [UICollectionViewCell.Type]) {
         for _cell in aCells {
