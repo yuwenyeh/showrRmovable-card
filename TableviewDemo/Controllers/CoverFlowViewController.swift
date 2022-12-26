@@ -15,6 +15,7 @@ class CoverFlowViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "廣告式滑動"
         setlayoutView()
         mCoverCollectionView.delegate = self
         mCoverCollectionView.dataSource = self

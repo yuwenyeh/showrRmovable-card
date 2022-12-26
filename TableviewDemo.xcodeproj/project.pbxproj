@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D81678652959E57300BA5008 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81678642959E57300BA5008 /* TabViewController.swift */; };
+		D81678682959E6EB00BA5008 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81678662959E6EB00BA5008 /* MenuViewController.swift */; };
+		D81678692959E6EB00BA5008 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D81678672959E6EB00BA5008 /* MenuViewController.xib */; };
 		D889EE9E2902A0D0002D2C4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D889EE9D2902A0D0002D2C4D /* AppDelegate.swift */; };
 		D889EEA02902A0D0002D2C4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D889EE9F2902A0D0002D2C4D /* SceneDelegate.swift */; };
 		D889EEA72902A0D2002D2C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D889EEA62902A0D2002D2C4D /* Assets.xcassets */; };
@@ -27,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D81678642959E57300BA5008 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		D81678662959E6EB00BA5008 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		D81678672959E6EB00BA5008 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		D889EE9A2902A0D0002D2C4D /* TableviewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableviewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D889EE9D2902A0D0002D2C4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D889EE9F2902A0D0002D2C4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +65,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D816785E2959DAF300BA5008 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D889EEB12902A146002D2C4D /* HomeViewController.swift */,
+				D889EEB22902A146002D2C4D /* HomeViewController.xib */,
+				D8C05DBE294B66D900DFB290 /* CoverFlowViewController.swift */,
+				D8C05DBF294B66D900DFB290 /* CoverFlowViewController.xib */,
+				D81678662959E6EB00BA5008 /* MenuViewController.swift */,
+				D81678672959E6EB00BA5008 /* MenuViewController.xib */,
+				D81678642959E57300BA5008 /* TabViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D816785F2959DB0C00BA5008 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D81678602959DB1A00BA5008 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D81678612959DB2700BA5008 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D81678622959E33E00BA5008 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D889EE9F2902A0D0002D2C4D /* SceneDelegate.swift */,
+				D889EE9D2902A0D0002D2C4D /* AppDelegate.swift */,
+				D889EEA82902A0D2002D2C4D /* LaunchScreen.storyboard */,
+				D889EEA62902A0D2002D2C4D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D81678632959E35C00BA5008 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		D889EE912902A0D0002D2C4D = {
 			isa = PBXGroup;
 			children = (
@@ -78,18 +137,16 @@
 		D889EE9C2902A0D0002D2C4D /* TableviewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D889EEB12902A146002D2C4D /* HomeViewController.swift */,
-				D889EEB22902A146002D2C4D /* HomeViewController.xib */,
-				D8C05DBE294B66D900DFB290 /* CoverFlowViewController.swift */,
-				D8C05DBF294B66D900DFB290 /* CoverFlowViewController.xib */,
+				D81678622959E33E00BA5008 /* Resources */,
+				D81678632959E35C00BA5008 /* Managers */,
+				D81678612959DB2700BA5008 /* ViewModels */,
+				D816785F2959DB0C00BA5008 /* Views */,
+				D81678602959DB1A00BA5008 /* Models */,
+				D816785E2959DAF300BA5008 /* Controllers */,
 				D889EEB72902A411002D2C4D /* Adapter */,
 				D8C4DA4329419B36005E8082 /* Cell */,
 				D8C4DA3E29419AAA005E8082 /* extension */,
 				D8C4DA472941D83B005E8082 /* Layout */,
-				D889EE9F2902A0D0002D2C4D /* SceneDelegate.swift */,
-				D889EE9D2902A0D0002D2C4D /* AppDelegate.swift */,
-				D889EEA82902A0D2002D2C4D /* LaunchScreen.storyboard */,
-				D889EEA62902A0D2002D2C4D /* Assets.xcassets */,
 				D889EEAB2902A0D2002D2C4D /* Info.plist */,
 			);
 			path = TableviewDemo;
@@ -199,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D889EEAA2902A0D2002D2C4D /* LaunchScreen.storyboard in Resources */,
+				D81678692959E6EB00BA5008 /* MenuViewController.xib in Resources */,
 				D8C4DA4229419B30005E8082 /* HomeCollectionViewCell.xib in Resources */,
 				D889EEA72902A0D2002D2C4D /* Assets.xcassets in Resources */,
 				D889EEB42902A146002D2C4D /* HomeViewController.xib in Resources */,
@@ -216,7 +274,9 @@
 				D889EE9E2902A0D0002D2C4D /* AppDelegate.swift in Sources */,
 				D889EEA02902A0D0002D2C4D /* SceneDelegate.swift in Sources */,
 				D8C05DC0294B66D900DFB290 /* CoverFlowViewController.swift in Sources */,
+				D81678682959E6EB00BA5008 /* MenuViewController.swift in Sources */,
 				D889EEB92902A439002D2C4D /* AdapterSectionModel.swift in Sources */,
+				D81678652959E57300BA5008 /* TabViewController.swift in Sources */,
 				D889EEB32902A146002D2C4D /* HomeViewController.swift in Sources */,
 				D8C05DBB294B667300DFB290 /* CoverFlowCollectionViewCell.swift in Sources */,
 				D8C4DA3D294196E6005E8082 /* UICollectionView+.swift in Sources */,

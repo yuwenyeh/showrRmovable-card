@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "瀑布流"
         setUpView()
     }
     
@@ -24,7 +25,7 @@ class HomeViewController: UIViewController {
         mCollectionView.collectionViewLayout = layout
         mCollectionView.dataSource = self
         
-        //注冊cell
+        //註冊cell
         mCollectionView.registerXibCell(HomeCollectionViewCell.self)
         view.addSubview(mCollectionView)
     }
